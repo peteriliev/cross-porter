@@ -8,7 +8,7 @@ public final class Input {
 		throw new IllegalStateException("Attempt to instantiate class Input");
 	}
 
-	// svn log --xml -r 5000:HEAD https://svn.javelingroup.com/svn/arp/trunk > RC9.4.xml
+	// svn log --xml -r 5000:HEAD https://svn.foo.com/svn/arp/trunk > RC9.4.xml
 
 	// mvn exec:java -Dexec.mainClass="main.java.com.merck.javelin.GodClass"
 
