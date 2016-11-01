@@ -31,10 +31,10 @@ public class MyLogEntry2String implements Function<MyLogEntry, String> {
 		builder.append("echo \"svn update...\"").append(NEW_LINE);
 		builder.append("svn update").append(NEW_LINE);
 
-		builder.append("svn merge https://svn.merck.de/mocca/1-bruecke-phase2/trunk@");
+		builder.append("svn merge https://svn.javelingroup.com/svn/arp/trunk@");
 		builder.append(logEntry.getRevision() - 1);
 		builder.append(" ");
-		builder.append("https://svn.merck.de/mocca/1-bruecke-phase2/trunk@");
+		builder.append("https://svn.javelingroup.com/svn/arp/trunk@");
 		builder.append(logEntry.getRevision());
 		builder.append(NEW_LINE);
 

@@ -27,10 +27,10 @@ public class GodClass {
 
 		final List<MyLogEntry> rawSVNLog = NodeList2MyLogList.INSTANCE.apply(svnNodes);
 
-		final Stream<MyLogEntry> filteredSVNLost = rawSVNLog.stream().filter(FilterJIRAsByRelease.newInstance(Input.JIRAS_2_0_52_1));
+		final Stream<MyLogEntry> filteredSVNLost = rawSVNLog.stream().filter(FilterJIRAsByRelease.newInstance(Input.JIRAS_RC_9_4));
 
 		final Stream<MyLogEntry> sortedSVNList = filteredSVNLost.sorted(MyLogEntryComparator.INSTANCE);
 
-		final File scriptFile = MyLogEntryStream2File.newInstance().apply(sortedSVNList);
+		MyLogEntryStream2File.newInstance().apply(sortedSVNList);
 	}
 }

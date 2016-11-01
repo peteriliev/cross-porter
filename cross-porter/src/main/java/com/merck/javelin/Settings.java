@@ -13,6 +13,6 @@ public final class Settings {
 	
 	public static final String SVN_XML_AUTHOR = "author";
 
-	public static final String JIRA_REGEX_PATTERN = "BR-\\d{4}";
+	public static final String JIRA_REGEX_PATTERN = "ARP-\\d{4}";
 
 }

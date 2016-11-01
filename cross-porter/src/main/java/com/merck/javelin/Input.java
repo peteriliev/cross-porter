@@ -8,12 +8,13 @@ public final class Input {
 		throw new IllegalStateException("Attempt to instantiate class Input");
 	}
 
-	// Run in trunk local context
-	// svn log --xml -r 26695:HEAD > 5.0.52.x_JIRAs.xml
+	// svn log --xml -r 5000:HEAD https://svn.javelingroup.com/svn/arp/trunk > RC9.4.xml
 
-	static final String XML_FILE = "C://Users/peteri/JIRA_xml/files/5.0.52.x_JIRAs.xml";
+	// mvn exec:java -Dexec.mainClass="main.java.com.merck.javelin.GodClass"
 
-	static final String[] _JIRAS_2_0_52_1 = new String[] { "BR-9854", "BR-9851", "BR-9846", "BR-9791", "BR-9468" };
+	static final String XML_FILE = "C://projects/Aurora/cross-porter/files/RC9.4.xml";
 
-	static final List<String> JIRAS_2_0_52_1 = Arrays.asList(_JIRAS_2_0_52_1);
+	static final String[] _JIRAS_RC9_4 = new String[] { "ARP-6592" };
+
+	static final List<String> JIRAS_RC_9_4 = Arrays.asList(_JIRAS_RC9_4);
 }
